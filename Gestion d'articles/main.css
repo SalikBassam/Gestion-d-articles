@@ -1,0 +1,159 @@
+body{
+    background-color: #eee;
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    text-align: center;
+}
+#add-pt{
+    display: flex;
+    gap: 30px;
+    margin: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.add{
+    width: 25%;
+    height:450px;
+    background-color:white;
+    border-radius: 10px;
+    padding: 10px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+.info span{
+    color:rgba(2, 2, 133, 0.637);
+position: absolute;
+left:40%;
+}
+
+.new{
+background-color:#eee;
+border-radius: 50%;
+width: 60px;
+height:60px;
+text-align: center;
+line-height:60px;
+font-size: 30px;
+font-weight:700;
+position:absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+cursor: pointer;
+transition: 0.3s;
+}
+.new:hover{
+    background-color:black;
+    color:white;
+
+}
+.article-inf,.article-inf-edit{
+    background-color:white;
+    width:80%;
+    height:80%;
+    position: absolute;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
+box-shadow: 0px 0px 12px 0px grey;
+border-radius: 8px;
+z-index: 1;
+display: none;
+padding-bottom:30px ;
+}
+.dark{
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 1000%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+display: none;
+right: 0;
+}
+.form{
+display:flex;
+flex-direction: column;
+margin:70px 30px;
+align-items: center;
+flex-wrap: wrap;
+}
+.form input,select{
+    padding: 10px;
+    border:none;
+border: 1px solid rgba(2, 2, 133, 0.637);
+border-radius: 5px;
+margin-top: 5px;
+background-color: white;
+}
+.form .aa,p{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    width: 40%;
+}
+.title{
+    text-align:center;
+    background-color:rgb(2, 2, 133);
+    position: absolute;
+    top:0;
+    color:white;
+    width:100%;
+}
+.title p{
+    position:absolute;
+    right:0;
+    width:auto;
+    top:0;
+    cursor: pointer;
+    padding: 10px;
+    transition:0.3s;
+    border-radius:20% ;
+}
+.title p:hover{
+    background-color:white;
+    color:rgb(2, 2, 133);
+}
+#btn , #btn1{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    color:white;
+    background-color:rgb(2, 2, 133);
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.info{
+border-bottom:3px solid black;
+padding-bottom:10px ;
+}
+.ll{
+    align-items: baseline;
+}
+.edit ,.delet{
+background-color: #eee;
+border:none;
+padding: 10px;
+cursor: pointer;
+width: 20px;
+}
+.add .btns{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+}
+.delet{
+    background-image:url(download.png) ;
+    background-size: cover;
+}
+.edit{
+    background-image:url(icons8-pencil-30.png) ;
+    background-size: cover;
+}
